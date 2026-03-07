@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monish Babu V M | Java Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">M<span class="accent">onish Babu V M</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-theme-wrap">
+        <label for="themeSelect" class="sr-only">Theme</label>
+        <select id="themeSelect" class="theme-select" aria-label="Choose theme">
+          <option value="cyan">Cyan</option>
+          <option value="amber">Amber</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+          <option value="rose">Rose</option>
+        </select>
+      </li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting animate-fade-up">Hi, I'm</p>
+      <h1 class="hero-name animate-fade-up delay-1">Monish Babu <span class="accent">V M</span></h1>
+      <p class="hero-role animate-fade-up delay-2">Java Developer & Full-Stack Enthusiast</p>
+      <p class="hero-tagline animate-fade-up delay-3">Building secure, scalable applications with Java, Spring & modern web tech</p>
+      <div class="hero-cta animate-fade-up delay-4">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap animate-fade-up delay-2">
+      <div class="hero-image-frame">
+        <img src="assets/profile.png" alt="Monish Babu V M" class="hero-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="hero-image-placeholder" style="display:none;">MB</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">Entry-level Java Developer and Computer Science and Business Systems undergraduate with hands-on experience in building backend and full-stack applications.</p>
+          <p>I work with <strong>Java, Spring Boot, JDBC, and SQL</strong> to build secure, scalable, and maintainable applications. I have a strong grasp of object-oriented programming, database management, and RESTful application design, with a focus on clean code and continuous learning.</p>
+          <p>From internships to academic projects, I've delivered features in agile environments and enjoy turning ideas into working software.</p>
+          <a href="Monish Babu VM - Developer.pdf" class="btn btn-primary" download>Download Resume</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-card-inner">
+              <span class="about-stat">2+</span>
+              <span class="about-stat-label">Internships</span>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-inner">
+              <span class="about-stat">2+</span>
+              <span class="about-stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">02.</span> Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3>Programming</h3>
+          <ul>
+            <li><span class="skill-dot"></span> Java</li>
+            <li><span class="skill-dot"></span> Python (Basic)</li>
+          </ul>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Databases & Tech</h3>
+          <ul>
+            <li><span class="skill-dot"></span> SQL</li>
+            <li><span class="skill-dot"></span> MongoDB</li>
+            <li><span class="skill-dot"></span> JDBC</li>
+          </ul>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Web</h3>
+          <ul>
+            <li><span class="skill-dot"></span> HTML, CSS, JavaScript</li>
+            <li><span class="skill-dot"></span> React (Basic)</li>
+          </ul>
+        </div>
+        <div class="skill-category reveal">
+          <h3>Frameworks & Tools</h3>
+          <ul>
+            <li><span class="skill-dot"></span> Spring Boot</li>
+            <li><span class="skill-dot"></span> IntelliJ IDEA, Git, GitHub</li>
+            <li><span class="skill-dot"></span> AWS (EC2, S3)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="soft-skills reveal">
+        <h3>Soft Skills</h3>
+        <div class="soft-skills-tags">
+          <span>Analytical Thinking</span>
+          <span>Problem Solving</span>
+          <span>Team Collaboration</span>
+          <span>Communication</span>
+          <span>Adaptability</span>
+          <span>Continuous Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section education">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">03.</span> Education</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>B.Tech – Computer Science and Business Systems</h4>
+            <p class="timeline-place">SSM Institute of Engineering and Technology, Dindigul</p>
+            <p class="timeline-meta">2022 – 2026 · CGPA: 7.8 / 10</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Higher Secondary (HSC)</h4>
+            <p class="timeline-place">MSP Solai Nadar Memorial Higher Secondary School</p>
+            <p class="timeline-meta">2022 · 70%</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h4>Secondary School (SSLC)</h4>
+            <p class="timeline-place">MSP Solai Nadar Memorial Higher Secondary School</p>
+            <p class="timeline-meta">2020 · 76%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">04.</span> Experience</h2>
+      <div class="exp-list">
+        <article class="exp-card reveal">
+          <div class="exp-header">
+            <h3>React JS Intern · Frontend Developer</h3>
+            <span class="exp-date exp-ongoing">Present · Ongoing</span>
+          </div>
+          <p class="exp-company">ICANIO Technologies</p>
+          <p class="exp-desc">Building modern frontend applications using React.js as a Frontend Developer intern.</p>
+        </article>
+        <article class="exp-card reveal">
+          <div class="exp-header">
+            <h3>Software Engineer Intern</h3>
+            <span class="exp-date">Aug 2025 – Nov 2025</span>
+          </div>
+          <p class="exp-company">Gentrobyte AI Labs</p>
+          <p class="exp-desc">Developed and optimized backend and full-stack features using Java, Spring, JDBC, SQL, and RESTful APIs in an agile environment.</p>
+        </article>
+        <article class="exp-card reveal">
+          <div class="exp-header">
+            <h3>Web Development Intern</h3>
+            <span class="exp-date">Aug 2024 – Sep 2024</span>
+          </div>
+          <p class="exp-company">Kevell Group of Technology</p>
+          <p class="exp-desc">Built responsive web interfaces using HTML, CSS, and JavaScript, supporting backend integration, testing, and debugging.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">05.</span> Projects</h2>
+      <div class="project-cards">
+        <article class="project-card reveal">
+          <div class="project-card-bg"></div>
+          <h3>Secure Test Conductor</h3>
+          <p>Web app that creates a secure test room by extracting questions from an uploaded question set (PDF or other supported formats). Students join using the room code, with controls designed to reduce malpractice.</p>
+          <div class="project-tech">HTML · CSS · JavaScript · SQL</div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-card-bg"></div>
+          <h3>Online Secure Test Conductor Website</h3>
+          <p>Secure online examination system with Java and Spring — authentication, authorization, and role-based access control. Designed relational database schemas and SQL-based reporting and result-generation modules.</p>
+          <div class="project-tech">HTML · CSS · JavaScript · SQL</div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-card-bg"></div>
+          <h3>Mental Health Tracker Application</h3>
+          <p>Backend application logic in Java for user data, workflows, and mood tracking. REST-style interactions and privacy-focused data handling for a secure, maintainable architecture.</p>
+          <div class="project-tech">HTML · CSS · React · SQL · Java</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">06.</span> Get In Touch</h2>
+      <p class="contact-lead">I'm open to opportunities and collaborations. Say hello!</p>
+      <div class="contact-links">
+        <a href="tel:+918778557689" class="contact-item">
+          <span class="contact-icon">📞</span>
+          <span>+91 8778557689</span>
+        </a>
+        <a href="mailto:monishbabu023@gmail.com" class="contact-item">
+          <span class="contact-icon">📧</span>
+          <span>monishbabu023@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/monish-babu-v-m-943610300/" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">LinkedIn</span>
+          <span>Connect</span>
+        </a>
+        <a href="https://github.com/Monish-FSD" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-icon">GitHub</span>
+          <span>@Monish-FSD</span>
+        </a>
+      </div>
+      <p class="contact-note">You can also download my <a href="Monish Babu VM - Developer.pdf" download>resume (PDF)</a>.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Designed & built by Monish Babu V M</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
