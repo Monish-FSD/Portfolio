@@ -112,22 +112,5 @@
     });
   });
 
-  // ----- Theme switcher -----
-  const themeSelect = document.getElementById('themeSelect');
-  const THEME_KEY = 'portfolio-theme';
 
-  function applyTheme(theme) {
-    document.body.setAttribute('data-theme', theme || 'cyan');
-    if (themeSelect) themeSelect.value = theme || 'cyan';
-    try { localStorage.setItem(THEME_KEY, theme || 'cyan'); } catch (e) {}
-  }
-
-  if (themeSelect) {
-    var saved = null;
-    try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
-    if (saved) applyTheme(saved);
-    themeSelect.addEventListener('change', function () {
-      applyTheme(this.value);
-    });
-  }
 })();

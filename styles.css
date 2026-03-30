@@ -71,7 +71,9 @@
 }
 
 /* ===== Reset & Base ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -99,7 +101,9 @@ a:hover {
   color: var(--accent-hover);
 }
 
-.accent { color: var(--accent); }
+.accent {
+  color: var(--accent);
+}
 
 /* ===== Cursor glow (optional effect) ===== */
 .cursor-glow {
@@ -304,9 +308,19 @@ a:hover {
 }
 
 @keyframes float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(30px, -30px) scale(1.05); }
-  66% { transform: translate(-20px, 20px) scale(0.95); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -30px) scale(1.05);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
 }
 
 .hero-content {
@@ -356,10 +370,21 @@ a:hover {
   animation: fadeUp 0.8s ease forwards;
 }
 
-.delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.2s; }
-.delay-3 { animation-delay: 0.3s; }
-.delay-4 { animation-delay: 0.45s; }
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.45s;
+}
 
 @keyframes fadeUp {
   to {
@@ -388,8 +413,15 @@ a:hover {
 }
 
 @keyframes pulse-ring {
-  0%, 100% { box-shadow: 0 0 40px var(--accent-glow); }
-  50% { box-shadow: 0 0 60px var(--accent-glow), 0 0 80px var(--accent-glow); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 40px var(--accent-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 60px var(--accent-glow), 0 0 80px var(--accent-glow);
+  }
 }
 
 .hero-image {
@@ -433,8 +465,15 @@ a:hover {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
 }
 
 /* ===== Section common ===== */
@@ -504,7 +543,7 @@ a:hover {
 .about-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
 .about-card-inner {
@@ -627,7 +666,9 @@ a:hover {
   padding-bottom: 2rem;
 }
 
-.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
 
 .timeline-marker {
   position: absolute;
@@ -681,7 +722,7 @@ a:hover {
 .exp-card:hover {
   transform: translateX(8px);
   border-color: var(--accent);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .exp-header {
@@ -812,7 +853,7 @@ a:hover {
 .contact-item:hover {
   border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-icon {

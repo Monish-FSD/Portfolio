@@ -23,16 +23,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li class="nav-theme-wrap">
-        <label for="themeSelect" class="sr-only">Theme</label>
-        <select id="themeSelect" class="theme-select" aria-label="Choose theme">
-          <option value="cyan">Cyan</option>
-          <option value="amber">Amber</option>
-          <option value="green">Green</option>
-          <option value="purple">Purple</option>
-          <option value="rose">Rose</option>
-        </select>
-      </li>
+
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -47,20 +38,22 @@
       <div class="gradient-orb orb-2"></div>
       <div class="gradient-orb orb-3"></div>
     </div>
-    <div class="hero-content">
-      <p class="hero-greeting animate-fade-up">Hi, I'm</p>
-      <h1 class="hero-name animate-fade-up delay-1">Monish Babu <span class="accent">V M</span></h1>
-      <p class="hero-role animate-fade-up delay-2">Java Developer & Full-Stack Enthusiast</p>
-      <p class="hero-tagline animate-fade-up delay-3">Building secure, scalable applications with Java, Spring & modern web tech</p>
-      <div class="hero-cta animate-fade-up delay-4">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting animate-fade-up">Hi, I'm</p>
+        <h1 class="hero-name animate-fade-up delay-1">Monish Babu <span class="accent">V M</span></h1>
+        <p class="hero-role animate-fade-up delay-2">Java Developer & Full-Stack Enthusiast</p>
+        <p class="hero-tagline animate-fade-up delay-3">Building secure, scalable applications with Java, Spring & modern web tech</p>
+        <div class="hero-cta animate-fade-up delay-4">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
       </div>
-    </div>
-    <div class="hero-image-wrap animate-fade-up delay-2">
-      <div class="hero-image-frame">
-        <img src="profile.png" alt="Monish Babu V M" class="hero-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <div class="hero-image-placeholder" style="display:none;">MB</div>
+      <div class="hero-image-wrap animate-fade-up delay-2">
+        <div class="hero-image-frame">
+          <img src="profile.png" alt="Monish Babu V M" class="hero-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="hero-image-placeholder" style="display:none;">MB</div>
+        </div>
       </div>
     </div>
     <div class="scroll-indicator">
@@ -130,7 +123,7 @@
           <ul>
             <li><span class="skill-dot"></span> Spring Boot</li>
             <li><span class="skill-dot"></span> IntelliJ IDEA, Git, GitHub</li>
-            <li><span class="skill-dot"></span> AWS (EC2, S3)</li>
+
           </ul>
         </div>
       </div>
@@ -197,7 +190,7 @@
         <article class="exp-card reveal">
           <div class="exp-header">
             <h3>Software Engineer Intern</h3>
-            <span class="exp-date">Aug 2025 – Nov 2025</span>
+            <span class="exp-date">Aug 2025 – Mar 23, 2026</span>
           </div>
           <p class="exp-company">Gentrobyte AI Labs</p>
           <p class="exp-desc">Developed and optimized backend and full-stack features using Java, Spring, JDBC, SQL, and RESTful APIs in an agile environment.</p>
@@ -219,6 +212,12 @@
     <div class="container">
       <h2 class="section-title"><span class="section-num">05.</span> Projects</h2>
       <div class="project-cards">
+        <article class="project-card reveal">
+          <div class="project-card-bg"></div>
+          <h3>AI based Smart Business Analytics System</h3>
+          <p>An intelligent platform that leverages machine learning to providing actionable insights for business growth. It analyzes sales trends, customer behavior, and inventory data to forecast demand and optimize operational efficiency.</p>
+          <div class="project-tech">Python · Machine Learning · Pandas · Scikit-Learn</div>
+        </article>
         <article class="project-card reveal">
           <div class="project-card-bg"></div>
           <h3>Secure Test Conductor</h3>
@@ -275,4 +274,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
