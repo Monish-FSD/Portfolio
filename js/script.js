@@ -4,12 +4,26 @@ function toggleProj(row){
   if(!open) row.classList.add('open');
 }
 
+function openHireMail(event){
+  if(event) event.preventDefault();
+
+  const email = 'monishbabu023@gmail.com';
+  const subject = 'Hiring Inquiry - Portfolio';
+  const body = 'Hello Monish,\n\nI came across your portfolio and would love to discuss a potential opportunity.\n\nBest regards,\nYour Name';
+  const mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  const gmailLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(email) + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+  const composeWindow = window.open(gmailLink, '_blank', 'noopener,noreferrer');
+  if(!composeWindow){
+    window.location.href = mailtoLink;
+  }
+}
+
 function downloadResume(){
-  // Direct path to resume in Documents
-  const resumeUrl = 'file:///C:/Users/HP/Documents/Monish Babu VM (Updated).pdf';
+  const resumeUrl = 'assets/MonishBabuVM_SD_CV.pdf';
   const link = document.createElement('a');
   link.href = resumeUrl;
-  link.download = 'Monish_Babu_VM_Resume.pdf';
+  link.download = 'MonishBabuVM_SD_CV.pdf';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
