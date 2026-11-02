@@ -1,73 +1,50 @@
-# Portfolio Structure Guide
+<div align="center">
 
-Your portfolio has been organized into separate folders for better maintainability.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:141e30,100:243b55&height=200&section=header&text=My%20Portfolio&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Monish%20Babu%20V%20M%20%7C%20Full-Stack%20Developer&descAlignY=60&descSize=18" width="100%" alt="banner"/>
 
-## 📁 Folder Structure
+[![Live](https://img.shields.io/badge/🌐_Live_Site-Visit-2ea44f?style=for-the-badge)](https://portfolio-five-sand-l8c1t9prz5.vercel.app)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Vercel](https://img.shields.io/badge/Vercel-000?style=flat-square&logo=vercel&logoColor=white)
+
+</div>
+
+> 📸 **TODO:** add a screenshot here: `<img src="images/preview.png" width="100%" alt="preview"/>`
+
+## ✨ Features
+
+- 📱 Fully responsive (mobile and desktop)
+- 🌙 Modern dark theme with accent colours
+- 🎞️ Smooth scroll and fade-in animations
+- 🗂️ Expandable project cards
+- 📄 One-click resume download
+
+## 🧰 Built With
+
+HTML5 · CSS3 · JavaScript · Deployed on Vercel
+
+## 📁 Structure
 
 ```
-portfolio/
-├── index.html              # Main HTML file (entry point)
-├── iam.html                # Original file (can be deleted)
-├── css/
-│   └── styles.css         # All CSS styles
-├── js/
-│   └── script.js          # All JavaScript functionality
-├── images/
-│   └── profile.jpg        # Your profile photo (add here)
-├── assets/
-│   └── resume.pdf         # Your resume (add here)
-└── README.md              # This file
+Portfolio/
+├── index.html
+├── css/        # styles
+├── js/         # scripts
+├── images/     # profile photo and images
+└── assets/     # resume.pdf
 ```
 
-## 🚀 Setup Instructions
+## ▶️ Run Locally
 
-### 1. Add Your Profile Photo
-- Place your profile photo in the `images/` folder
-- Name it as `profile.jpg` (or update the src path in index.html if using a different name)
-- **Location in layout**: Hero section on the right side
-
-### 2. Add Your Resume
-- Place your resume PDF in the `assets/` folder
-- Name it as `resume.pdf` (or update the download function in js/script.js if using a different name)
-- The resume will download when users click the "Resume" button in the navbar
-
-### 3. Using the Portfolio
-- Open `index.html` in your browser to view the portfolio
-- You can delete the old `iam.html` file as it's no longer needed
-
-## 📝 Making Changes
-
-### To modify styles:
-- Edit `css/styles.css`
-- All styles are organized with clear section comments
-
-### To modify content:
-- Edit `index.html`
-- All sections are clearly labeled (HERO, SKILLS, EXPERIENCE, PROJECTS, etc.)
-
-### To add functionality:
-- Edit `js/script.js`
-- Key functions: `toggleProj()`, `downloadResume()`, scroll effects
-
-### To change resume filename:
-In `js/script.js`, find the `downloadResume()` function and update:
-```javascript
-const resumeUrl = 'assets/your-resume-filename.pdf';
+```bash
+git clone https://github.com/Monish-FSD/Portfolio.git
+cd Portfolio
+npx serve .        # or just open index.html
 ```
 
-## 🎨 Features Included
+## 📬 Contact
 
-✅ **Download Resume Button** - Click the "Resume" button in navbar to download  
-✅ **Responsive Design** - Works perfectly on mobile and desktop  
-✅ **Smooth Animations** - Professional fade-in and scroll effects  
-✅ **Dark Theme** - Modern dark interface with accent colors  
-✅ **Project Expandable Cards** - Click projects to see more details  
-✅ **Organized File Structure** - Easy to maintain and update
-
-## 📧 Contact Information
-
-Keep your contact details updated in the Contact section of index.html.
-
----
-
-**Happy building! 🚀**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/monishbabu-vm)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:monishbabu023@gmail.com)
